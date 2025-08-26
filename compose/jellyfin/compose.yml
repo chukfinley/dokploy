@@ -1,0 +1,23 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      - JELLYFIN_PublishedServerUrl=${JELLYFIN_PUB}
+    volumes:
+      - jellyfin-config:/config
+      - jellyfin-cache:/cache
+      - media-music:/media/music
+      - fonts:/usr/local/share/fonts/custom:ro
+
+volumes:
+  jellyfin-config:
+  jellyfin-cache:
+  media-music:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /path/to/your/media
+  fonts:

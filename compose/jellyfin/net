@@ -1,0 +1,8 @@
+Service Name=jellyfin
+Host=jelly.example.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=8096
+HTTPS=True
+Certificate Provider=Let's Encrypt
