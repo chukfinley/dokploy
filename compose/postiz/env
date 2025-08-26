@@ -1,0 +1,7 @@
+DOMAIN=example.com
+MAIN_URL=https://postiz.example.com
+FRONTEND_URL=https://postiz.example.com
+NEXT_PUBLIC_BACKEND_URL=https://postiz.example.com/api
+POSTIZ_SECRET_KEY=your_postiz_secret_key_here
+JWT_SECRET=replace-me-with-a-long-random-string
+DISABLE_REGISTRATION=false

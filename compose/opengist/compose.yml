@@ -1,0 +1,15 @@
+services:
+  opengist:
+    image: ghcr.io/thomiceli/opengist:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - 6158 # HTTP port
+    volumes:
+      - opengist-data:/opengist
+    environment:
+      - UID=${UID}
+      - GID=${GID}
+      - OG_LOG_LEVEL=${OG_LOG_LEVEL}
+volumes:
+  opengist-data: {}

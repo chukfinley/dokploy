@@ -1,0 +1,12 @@
+services:
+  gotenberg:
+    image: gotenberg/gotenberg:latest
+    pull_policy: always
+    environment:
+      GOTENBERG_API_BASIC_AUTH_USERNAME: ${GOTENBERG_API_BASIC_AUTH_USERNAME}
+      GOTENBERG_API_BASIC_AUTH_PASSWORD: ${GOTENBERG_API_BASIC_AUTH_PASSWORD}
+    command:
+      - gotenberg
+      - --api-enable-basic-auth
+      - --api-disable-health-check-logging
+    restart: unless-stopped

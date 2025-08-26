@@ -1,0 +1,2 @@
+GOTIFY_SERVER_WEBSOCKET_ORIGIN="go.example.com"
+GOTIFY_DEFAULTUSER_PASS=yourpassword #user is admin

@@ -1,0 +1,8 @@
+Service Name=opengist
+Host=gist.example.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=6157
+HTTPS=True
+Certificate Provider=Let's Encrypt
