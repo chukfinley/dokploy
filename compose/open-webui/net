@@ -1,0 +1,8 @@
+Service Name=open-webui
+Host=llm.exmaple.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=8080
+HTTPS=True
+Certificate Provider=Let's Encrypt

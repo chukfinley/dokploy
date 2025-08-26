@@ -1,0 +1,8 @@
+Service Name=n8n
+Host=n8n.example.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=5678
+HTTPS=True
+Certificate Provider=Let's Encrypt

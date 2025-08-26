@@ -1,0 +1,8 @@
+Service Name=linkwarden
+Host=link.example.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=3000
+HTTPS=True
+Certificate Provider=Let's Encrypt

@@ -1,0 +1,8 @@
+Service Name=Your Service
+Host=yourdomain.example.com
+Path=/
+Internal Path=/
+Stripe Path=False
+Conatiner Port=The Intenral Port of the Service
+HTTPS=True
+Certificate Provider=Let's Encrypt

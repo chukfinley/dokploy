@@ -1,0 +1,17 @@
+services:
+  open-webui:
+    image: your_image_here
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - your_port_here
+    environment:
+      - "YOUR_SECRET_KEY=${your_secret_key}"
+    volumes:
+      - open-webui:/app/backend/data
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
+volumes:
+  open-webui: {}
+  ollama: {}
